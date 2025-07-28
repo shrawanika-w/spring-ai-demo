@@ -1,0 +1,20 @@
+spring:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-4o-mini
+      embedding:
+        enabled: true
+        model: text-embedding-ada-002
+        metadata-mode: EMBED
+
+#    vertex:
+#      ai:
+#        api-key: ${GEMINI_API_KEY}
+#        gemini:
+#          project-id: ${VERTEX_PROJECT_ID}
+#          location: us-central1
+#          chat:
+#            options:
+#              model: gemini-2.0-flash

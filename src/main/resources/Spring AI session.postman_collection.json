@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "95484285-85d3-40fb-8c1a-c4ca6379bbbf",
+		"name": "Spring AI session",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46008666"
+	},
+	"item": [
+		{
+			"name": "Simple chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat?message=\"Tell me a dad joke\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "\"Tell me a dad joke\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moderation chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat-moderation?message=\"Tell me how to do riots in my city today\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat-moderation"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "\"Tell me how to do riots in my city today\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat stream",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"Tell me Harry Potter 1 summary in 50 words\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/chat-stream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat-stream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat tools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat-tools?message=\"Can you set an alarm 10 minutes from now?\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat-tools"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "\"Can you set an alarm 10 minutes from now?\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rag chat 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat-rag?query=\"What is color of sky\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat-rag"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "\"What is color of sky\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rag chat 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat-rag?query=\"How many sick leaves available\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat-rag"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "\"How many sick leaves available\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
