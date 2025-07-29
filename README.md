@@ -11,12 +11,13 @@ by **Shrawanika**
 
 ### Steps
 
-1. This project is created using Spring Initializer 
-2. Get the Open AI KEY from https://platform.openai.com/api-keys to add to .env file
-3. Create .env file in root folder and add variable OPENAI_API_KEY with the value
-4. Run SpringAiDemoApplication.java
-5. Send the queries via Postman or curl, refer controller class comments for the request parameters
-6. For Postman, you can import sample collection from - resources\Spring AI session.postman_collection.json
+1. _Versions_ - Java 21 | Spring Boot 3.5.5 | Apache Maven 3.9.7
+2. This project is created using Spring Initializer (https://start.spring.io/)
+3. Get the Open AI KEY from https://platform.openai.com/api-keys to add to .env file
+4. Create secrets.properties file in root folder and add variable OPENAI_API_KEY with the value (e.g. OPENAI_API_KEY=xxxxxxxxxxxxxx )
+5. Run SpringAiDemoApplication.java (Edit the configuration, add paramters to CLI arguments via external file (--spring.config.import=file:secrets.properties)
+6. Send the queries via Postman or curl, refer controller class comments for the request parameters
+7. For Postman, you can import sample collection from - resources\Spring AI session.postman_collection.json
 
 ### Reference Documentation
 For further reference, please consider the following sections:
